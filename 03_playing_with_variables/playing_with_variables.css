@@ -1,6 +1,22 @@
+:root {
+  --base-color: #ffc600;
+  --spacing: 20px;
+  --blur: 10px;
+}
+
 body {
   font-family: sans-serif;
   background-color: rgb(46, 45, 102);
-  color: #fff;
+  color: rgb(241, 241, 241);
   text-align: center;
+}
+
+img {
+  padding: var(--spacing);
+  background-color: var(--base-color);
+  filter: blur(var(--blur));
+}
+
+.highlight {
+  color: var(--base-color);
 }
