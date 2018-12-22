@@ -11,12 +11,25 @@ body {
   text-align: center;
 }
 
+.highlight {
+  color: var(--base-color);
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+}
+
+.controls label {
+  margin: 10px auto 20px;
+}
+
 img {
+  margin: 40px auto var(--spacing);
   padding: var(--spacing);
   background-color: var(--base-color);
   filter: blur(var(--blur));
-}
-
-.highlight {
-  color: var(--base-color);
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
