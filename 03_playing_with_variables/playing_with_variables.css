@@ -1,7 +1,7 @@
 :root {
   --base-color: #ffc600;
   --spacing: 20px;
-  --blur: 10px;
+  --blur: 0;
 }
 
 body {
@@ -11,6 +11,12 @@ body {
   text-align: center;
 }
 
+.content-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .highlight {
   color: var(--base-color);
 }
@@ -18,6 +24,8 @@ body {
 .controls {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .controls label {
@@ -25,11 +33,13 @@ body {
 }
 
 img {
+  box-sizing: border-box;
+  object-fit: cover;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
   margin: 40px auto var(--spacing);
   padding: var(--spacing);
   background-color: var(--base-color);
   filter: blur(var(--blur));
-  width: 100%;
-  max-width: 400px;
-  height: auto;
 }
